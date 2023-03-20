@@ -66,7 +66,12 @@ def findAllPersons():
 
         c = conn.cursor()
         res = c.execute(sql)
-        return res.fetchall()
+        rows = res.fetchall()
+
+        for row in rows:
+            itemList.append({"firstname": row[1], "lastname": row[2]})
+
+        return itemList
 
     except Error as e:
         print(e)

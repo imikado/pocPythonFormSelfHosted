@@ -4,15 +4,17 @@
   <thead>
     <tr>
       <th>ID</th>
-      <th>Titre</th>
+      <th>Prenom</th>
+      <th>Nom</th>
     </tr>
   </thead>
 
   <tbody>
     {% for personLoop in personsList %}
     <tr>
-      <td>{{ personLoop.id }}</td>
+      <td>1 {{ personLoop.id }}</td>
       <td>{{ personLoop.firstname }}</td>
+      <td>{{ personLoop.lastname }}</td>
     </tr>
     {% endfor %}
   </tbody>
