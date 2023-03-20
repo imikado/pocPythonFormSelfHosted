@@ -1,0 +1,21 @@
+<h1>Bienvenue sur ce POC</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Titre</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for personLoop in personsList %}
+    <tr>
+      <td>{{ personLoop.id }}</td>
+      <td>{{ personLoop.firstname }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<p><a href="{{ linkAdd }}">Ajouter</a></p>
