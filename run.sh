@@ -1,2 +1,5 @@
 #!/bin/bash
-flask --app Pages/index.py run
+source venv/bin/activate
+flask --app server.py run
+
+
